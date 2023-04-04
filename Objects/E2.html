@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+     // Initializing Object Using Factory Function   
+     function createAddress(street, city, zipCode)
+     {
+        return {
+            street,
+            city,
+            zipCode
+        }
+     }
+
+    const address=createAddress('Dugri', 'Ludhiana', 123456);
+    console.log(address);
+
+    function showAddress(address)
+    {
+        for(let key in address)
+    {
+        console.log(`${key} : ${address[key]}`);
+    }
+    return 0;
+    }
+
+    showAddress(address);
+
+    // Initializing Object Using Constructor Function  
+
+    function CreateAddress(street,city,zipCode)
+    {
+        this.street=street;
+        this.city=city;
+        this.zipCode=zipCode;
+    }
+
+    const address2 = new CreateAddress('Dugri','Ludhiana',123456);
+    console.log(address2);
+    showAddress(address2);
+    </script>
+</body>
+</html>

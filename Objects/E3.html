@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+     // Initializing Object Using Factory Function   
+     function createAddress(street, city, zipCode)
+     {
+        return {
+            street,
+            city,
+            zipCode
+        }
+     }
+
+    const address1=createAddress('Dugri', 'Ludhiana', 123456);
+    const address2=createAddress('Dugri', 'Ludhiana', 123456);
+    
+    function showAddress(address)
+    {
+        for(let key in address)
+    {
+        console.log(`${key} : ${address[key]}`);
+    }
+    return 0;
+    }
+
+    showAddress(address1);
+    showAddress(address2);
+
+    function isEqual(address1,address2)
+    {
+       if(address1.street===address2.street
+       && address1.city===address2.city
+       && address1.zipCode===address2.zipCode)
+       {
+        return true;
+       }
+       
+
+       return false;
+    }
+
+    function isSame(address1,address2)
+    {
+        if(address1===address2)
+        {
+            return true;
+        }
+    return false;
+    }
+   
+    console.log(isEqual(address1,address2));
+    console.log(isSame(address1,address2));
+    </script>
+</body>
+</html>

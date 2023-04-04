@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  const post={
+        //     title,
+        //     body,
+        //     author,
+        //     views,
+        //     comments:[
+        //         {author,body},
+        //         {author,body},
+        //         {author,body}
+        //     ],
+        //     isLive
+        //  }
+        // for someone whose blog post isn't live
+        function createPost(title,body,author)
+        {
+            this.title = title,
+            this.body = body,
+            this.author=author,
+            this.views=0,
+            this.comments=[],
+            this.isLive=false
+        }
+
+        const post1=new createPost('Technology','xyz','Jasleen Kaur');
+        console.log(post1);
+    </script>
+</body>
+</html>
