@@ -1,7 +1,6 @@
 
 
-function arrayFromRange(min,max)
-{
+const arrayFromRange=(min,max)=>{
     let arr=[];
     for(let i=min;i<=max;i++)
     {
@@ -11,6 +10,6 @@ function arrayFromRange(min,max)
     return arr;
 }
 
-const numbers = arrayFromRange(-5,1);
-console.log(numbers);
+console.log(arrayFromRange(-5,1));
+
 

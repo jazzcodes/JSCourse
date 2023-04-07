@@ -28,7 +28,7 @@ const numbers =[1,2,3,4,1];
 
 //using reduce array method
 
-function countOccurrences(array, searchElement)
+const countOccurrences=(array, searchElement)=>
 {
     return array.reduce((accumulator,currentValue )=>
     {

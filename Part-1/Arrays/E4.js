@@ -1,6 +1,6 @@
 const numbers=[1,2,3,4];
 
-function move(array, index, offset)
+const move=(array, index, offset)=>
 {
      const result=[...array];
      const position=index+offset;
@@ -16,5 +16,5 @@ function move(array, index, offset)
 
 }
 
-const output = move(numbers, 0, 1);
-console.log(output);
+
+console.log(move(numbers, 0, 1));

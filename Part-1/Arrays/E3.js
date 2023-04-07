@@ -1,8 +1,8 @@
 const numbers=[1,3,4,1];
-const output=except(numbers,[1,3]);
-console.log(output);
 
-function except(numbers,excluded)
+
+
+const except=(numbers,excluded)=>
 {
  
       const result =[];
@@ -19,3 +19,5 @@ function except(numbers,excluded)
 
     return result;
 }
+
+console.log(except(numbers,[1,3]));

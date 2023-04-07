@@ -11,13 +11,8 @@ const numbers =[1,2,3,4,2];
 
 // using reduce function
 
-function getMax(array)
+const getMax=(array)=>
 {
-    return array.reduce((accumulator, currentValue)=>
-    
-    {
-        return accumulator>currentValue?accumulator:currentValue;
-        
-    },undefined)
+    return array.reduce((accumulator, currentValue)=>{return accumulator>currentValue?accumulator:currentValue;},undefined)
 }
 console.log(getMax(numbers));

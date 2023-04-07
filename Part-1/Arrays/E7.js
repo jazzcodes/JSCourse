@@ -43,7 +43,7 @@ const movies= [
 
 // Better approach
 
-function showMovie(movies)
+const showMovie=(movies) =>
 {
     const titles = movies
                   .filter(m => m.year===2018 && m.rating>4)
