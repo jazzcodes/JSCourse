@@ -1,5 +1,3 @@
-
-
 const arrayFromRange=(min,max)=>{
     let arr=[];
     for(let i=min;i<=max;i++)

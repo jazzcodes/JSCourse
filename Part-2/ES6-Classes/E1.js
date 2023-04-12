@@ -2,9 +2,7 @@ class Stack{
     constructor()
     {
         let ctr=0;
-
     }
-  
 
     get count()
     {

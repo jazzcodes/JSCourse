@@ -16,5 +16,4 @@ const move=(array, index, offset)=>
 
 }
 
-
 console.log(move(numbers, 0, 1));

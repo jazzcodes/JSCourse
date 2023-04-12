@@ -12,8 +12,6 @@ function isPrime(num)
 
         return true;
     }
-
-
 }
 
 function showPrime(limit)

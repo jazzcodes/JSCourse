@@ -1,10 +1,6 @@
 const numbers=[1,3,4,1];
-
-
-
 const except=(numbers,excluded)=>
 {
- 
       const result =[];
       for(let number of numbers)
       {
@@ -12,12 +8,8 @@ const except=(numbers,excluded)=>
         {
            result.push(number);
         }
-
       }
-
-    
-
-    return result;
+return result;
 }
 
 console.log(except(numbers,[1,3]));

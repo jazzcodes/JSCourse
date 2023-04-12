@@ -2,7 +2,6 @@ showStars(4);
 
 function showStars(stars)
 {
-   
    for(let i=1;i<=stars;i++)
    {
     let pattern = '';

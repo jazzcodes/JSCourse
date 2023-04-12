@@ -12,6 +12,4 @@ class Circle{
 }
 
 const circle = Circle.parse('{"radius":1}');
-
-
 const circle2=new Circle(3);
